@@ -31,12 +31,8 @@ public class InventoryIssueController {
         return ResponseEntity.ok(issue);
     }
 
-<<<<<<< HEAD
-
-=======
     // 2. Item return/wapas lene ke liye (PUT API)
     // URL example: PUT /api/inventory-issues/return/1?returnQuantity=2
->>>>>>> 312082fde2908e8b55a9e216bff55824e97b42ec
     @PutMapping("/return/{issueId}")
     public ResponseEntity<String> returnItem(
             @PathVariable Long issueId,
@@ -46,12 +42,8 @@ public class InventoryIssueController {
         return ResponseEntity.ok("Item successfully return ho gaya aur inventory stock update ho gaya!");
     }
 
-<<<<<<< HEAD
-
-=======
     // 3. Kisi specific personnel ke saare issues nikalne ke liye (GET API)
     // URL example: GET /api/inventory-issues/personnel/2
->>>>>>> 312082fde2908e8b55a9e216bff55824e97b42ec
     @GetMapping("/personnel/{personnelId}")
     public ResponseEntity<List<InventoryIssue>> getIssuesByPersonnel(@PathVariable Long personnelId) {
         List<InventoryIssue> issues = inventoryIssueService.getIssuesByPersonnel(personnelId);

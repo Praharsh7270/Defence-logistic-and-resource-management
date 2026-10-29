@@ -61,14 +61,6 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-=======
->>>>>>> 312082fde2908e8b55a9e216bff55824e97b42ec
 	</dependencies>
 
 	<build>

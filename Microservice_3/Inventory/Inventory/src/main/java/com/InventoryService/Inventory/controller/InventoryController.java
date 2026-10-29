@@ -17,33 +17,21 @@ public class InventoryController {
         this.inventoryService = inventoryService;
     }
 
-<<<<<<< HEAD
-
-=======
     // 1. Saari inventory items dekhne ke liye (GET API)
->>>>>>> 312082fde2908e8b55a9e216bff55824e97b42ec
     @GetMapping
     public ResponseEntity<List<Inventory>> getAllItems() {
         List<Inventory> items = inventoryService.getAllInventoryItems();
         return ResponseEntity.ok(items);
     }
 
-<<<<<<< HEAD
-
-=======
     // 2. ID ke hisaab se specific item nikalne ke liye (GET API)
->>>>>>> 312082fde2908e8b55a9e216bff55824e97b42ec
     @GetMapping("/{id}")
     public ResponseEntity<Inventory> getItemById(@PathVariable Long id) {
         Inventory item = inventoryService.getStockById(id);
         return ResponseEntity.ok(item);
     }
 
-<<<<<<< HEAD
-
-=======
     // 3. Stock quantity update karne ke liye (PUT API)
->>>>>>> 312082fde2908e8b55a9e216bff55824e97b42ec
     @PutMapping("/{id}/quantity")
     public ResponseEntity<String> updateQuantity(@PathVariable Long id, @RequestParam int quantity) {
         inventoryService.updateStockQuantity(id, quantity);
